@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { Assets } from "./quartz/plugins"
 
 /**
  * Quartz 4 Configuration
@@ -8,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Pr4veen",
+    pageTitle: "Pr4veen.in",
     pageTitleSuffix: "My Digital Garden",
     enableSPA: true,
     enablePopovers: true,
@@ -54,6 +55,7 @@ const config: QuartzConfig = {
     },
   },
   plugins: {
+    
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
@@ -94,3 +96,4 @@ const config: QuartzConfig = {
 }
 
 export default config
+
